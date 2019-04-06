@@ -337,7 +337,7 @@ class WeightedSkipGram(object):
             init.run()
             print('Initialized')
 
-            for epoch in range(1000):
+            for epoch in range(30):
                 # separator
                 print '--> epoch: ' + str(epoch) + ' <---------------------------------------------------------------------------------'
                 if classifier_type is not None or classifier_type is not '':
