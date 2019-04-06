@@ -8,7 +8,7 @@ The *metaschema2vec* algorithm first introduces the concept of meta-schema in th
 
 ## Usage
 
-```python
+```shell
 python main.py --<FLAG>=VALUE`
 ```
 
@@ -19,7 +19,7 @@ where the flags are defined as :
 parser.add_argument('-d', '--data', help='Data abbreviation', default='DBLP', choices=['StackOverflow', 'DBLP'], dest='d')
 parser.add_argument('-s', '--start-position', help='The start position in the flow', default=2, type=int, dest='s')
 # random walk parameter
-parser.add_argument('--number_walks', help='number of walks per node', default=10, type=int)
+parser.add_argument('--number_walks', help='number of walks per node', default=20, type=int)
 parser.add_argument('--walk_length', help='walk length per node', default=50, type=int)
 parser.add_argument('--trans_prob', help='walk length per node', choices=['average', 'invnodes', 'invedges'], default='average', type=str)
 # representation learning parameter
